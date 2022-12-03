@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    let url1 = "../css/contrasteLogCad.css"
-    let url2 = "../css/estiloLogCad.css"
+    let url1 = "../css/estiloLogCad.css"
+    let url2 = "../css/contrasteLogCad.css"
     let contraste = document.getElementById("contraste")
     let semcontraste = document.getElementById("semcontraste")
 
