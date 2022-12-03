@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    let url1 = "css/estiloLogCad.css"
-    let url2 = "css/contrasteLogCad.css"
+    let url2 = "css/estiloLogCad.css"
+    let url1 = "css/contrasteLogCad.css"
     let contraste = document.getElementById("contraste")
     let semcontraste = document.getElementById("semcontraste")
 
@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function(){
     let tag = document.getElementsByClassName("acess") //<link  href=url rel="stylesheet" type="text/css">
 
     contraste.onclick = function(){
-        tag[0].href = url1
-        localStorage.setItem("css", url1)
+        tag[0].href = url2
+        localStorage.setItem("css", url2)
     }
 
     semcontraste.onclick = function(){
-        tag[0].href = url2
-        localStorage.setItem("css", url2)
+        tag[0].href = url1
+        localStorage.setItem("css", url1)
     }
 
     let css = localStorage.getItem("css")
