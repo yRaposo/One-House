@@ -175,6 +175,7 @@ h2 {
 }
 
 .selecao img {
+    filter: none;
     width: 50%;
     height: 50%;
 }
