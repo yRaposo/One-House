@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function(){
     let tag = document.getElementsByClassName("acess") //<link  href=url rel="stylesheet" type="text/css">
 
     contraste.onclick = function(){
-        tag[0].href = url2
-        localStorage.setItem("css", url2)
+        tag[0].href = url1
+        localStorage.setItem("css", url1)
     }
 
     semcontraste.onclick = function(){
-        tag[0].href = url1
-        localStorage.setItem("css", url1)
+        tag[0].href = url2
+        localStorage.setItem("css", url2)
     }
 
     let css = localStorage.getItem("css")
