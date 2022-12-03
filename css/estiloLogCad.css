@@ -6,7 +6,7 @@
     font-family: roboto;
 }
 
-.links{
+.links {
     padding-top: 10px;
 }
 
@@ -61,7 +61,7 @@ body {
     font-size: 1em;
 }
 
-.navegacao{
+.navegacao {
     border-radius: 10px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -73,23 +73,24 @@ body {
     padding: 10px;
 }
 
-.navegacao ul{
+.navegacao ul {
     display: flex;
     list-style: none;
 }
 
-.navegacao ul li{
+.navegacao ul li {
     padding-left: 80px;
 }
 
-.navegacao a img{
+.navegacao a img {
     width: 65%;
     height: 65%;
 }
 
-svg{
+svg {
     width: 45px;
 }
+
 .atalhos,
 .links_access {
     list-style: none;
@@ -108,7 +109,7 @@ svg{
     justify-content: center;
 }
 
-#foto img{
+#foto img {
     width: 13%;
     height: 13%;
 }
@@ -120,12 +121,12 @@ h1 {
     color: #F2A92F;
 }
 
-h2{
+h2 {
     display: flex;
     justify-content: center;
 }
 
-.pbio{
+.pbio {
     display: flex;
     justify-content: center;
     line-height: 1.5rem;
@@ -134,9 +135,9 @@ h2{
     color: #9b9b9b;
 }
 
-#follow{
+#follow {
     margin-top: 20px;
-    box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.281);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.281);
     border-radius: 10px;
     background-color: #FFF;
     margin-left: 43%;
@@ -147,7 +148,9 @@ h2{
     justify-content: center;
 }
 
-.seguindo, .seguidores, .divselecao{
+.seguindo,
+.seguidores,
+.divselecao {
     height: 3em;
     padding-left: 10%;
     padding-right: 10%;
@@ -157,32 +160,33 @@ h2{
     justify-content: center;
 }
 
-.seguindo{
+.seguindo {
     border-left-style: inset;
 }
 
-.selecao{
+.selecao {
     margin-left: 30%;
     margin-right: 30%;
     border-color: #bfbfbf;
     border-style: groove;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.selecao img{
+.selecao img {
     width: 50%;
     height: 50%;
 }
 
-.divselecao{
+.divselecao {
     border-color: #bfbfbf;
     border-left: groove;
     border-right: groove;
 }
 
-#postagens{
+#postagens {
+    margin-top: 5px;
     margin-left: 10%;
     margin-right: 10%;
     border-color: #bfbfbf;
@@ -192,7 +196,7 @@ h2{
     justify-content: center;
 }
 
-#postagens img{
+#postagens img {
     border-radius: 10px;
     width: 33.3%;
     height: 33.3%;
@@ -207,7 +211,7 @@ h2{
     padding: 5px;
 }
 
-#conteudo{
+#conteudo {
     font-size: 1.25rem;
     font-family: Roboto;
     margin-left: 6px;
@@ -228,7 +232,7 @@ h2{
     background: url(../imagens/gata.jpg) center center/cover;
     border-radius: 10px;
     display: flex;
-    align-items: flex-end;  
+    align-items: flex-end;
     color: #eee;
     box-shadow: 0 2px 10px 0 rgba(136, 136, 136, 0.77);
 }
@@ -275,7 +279,7 @@ h2{
     flex: auto;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     margin: 0rem 0;
 
 }
@@ -327,7 +331,7 @@ h2{
 #rodapeLogCad {
     justify-content: center;
     text-align: center;
-    background-color: #050f3b;
+
     color: #fff;
     font-size: 1.05em;
     align-items: center;
@@ -339,8 +343,9 @@ h2{
 }
 
 
-#rodape{
+#rodape {
     /*ajustes no footer, porém falta arrumar*/
+    
     justify-content: center;
     text-align: center;
     background-color: #050f3b;
@@ -350,7 +355,8 @@ h2{
     height: 80px;
     bottom: 0px;
     width: 100%;
-    
+    position: relative;
+
 }
 
 
@@ -433,9 +439,16 @@ button {
     color: #1f4690;
     background-color: #F2A92F;
     width: 140px;
+    
 }
 
-.botao{
+#logreg a{
+    color: #1f4690;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao {
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -443,7 +456,7 @@ button {
 
 .editar {
     margin-bottom: 30px;
-    box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.281);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.281);
 }
 
 .required::after {
@@ -468,8 +481,9 @@ button {
 }
 
 @media screen and (max-width: 1230px) {
-    #follow{
-        font-size: 0.65em;
+    #follow {
+        margin-left: 41%;
+        margin-right: 41%;
     }
 
     .links_access {
@@ -479,9 +493,10 @@ button {
 }
 
 @media screen and (max-width: 1024px) {
-    .editar{
-        font-size: 0.75em;
-    }    
+    .editar {
+        width: 15%;
+    }
+
     .links_access {
 
         margin-left: 25%;
@@ -496,53 +511,81 @@ button {
     .links_access {
         margin: auto;
     }
+
+    #follow {
+        margin-left: 38%;
+        margin-right: 38%;
+    }
 }
 
-@media screen and (max-width: 750px){
-    .selecao{
-        font-size: 0.75em;
+@media screen and (max-width: 750px) {
+    .selecao {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #follow {}
+
+}
+
+@media screen and (max-width: 720px) {
+    .navegacao ul li {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .editar {
+        width: 20%;
+    }
+
+    .selecao {}
+
+    #follow {
+        margin-left: 33%;
+        margin-right: 33%;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+    h1{
+        font-size: 1.5em;
+    }
+    .editar {
+        width: 30%;
+    }
+
+    #follow {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+    .selecao {
+        margin-left: 8%;
+        margin-right: 8%;
     }
     #follow{
-        font-size: 0.5em;
+        margin-left: 28%;
+        margin-right: 28%;
     }
-
 }
 
-@media screen and (max-width: 600px){
-    .editar{
-        width: 12%;
-        font-size: 0.5em;
-    }
-    .selecao{
-        font-size: 0.5em;
+@media screen and (max-width: 375px) {
+    .selecao {
+        margin-left: 5%;
+        margin-right: 5%;
     }
     #follow{
-        margin-left: 40%;
-        margin-right: 40%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
-
-}
-
-@media screen and (max-width: 465px){
-    .editar{
-        width: 15%;
-        font-size: 0.5em;
+    .editar {
+        width: 35%;
     }
-    .selecao{
-        font-size: 0.5em;
-    }
-    #follow{
-        margin-left: 37%;
-        margin-right: 37%;
-    }
-
-}
-
-@media screen and (max-width: 410px){
-    .selecao{
-                margin-left: 20%;
-                margin-right: 20%;
-            }
 }
 
 /*Adicionando as fontes customizadas*/
